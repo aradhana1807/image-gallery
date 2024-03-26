@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <div class="wrapp">
+      <h1 class="title">Gallery Image</h1>
+
+      <ul class="gallery">
+        <li class="gallery__item" data-fancybox="gallery" data-src="img/1.jpg">
+          <img src="img/1.jpg" alt="1" class="gallery__img" />
+          <span class="zoom">zoom</span>
+        </li>
+        <li class="gallery__item" data-fancybox="gallery" data-src="img/2.jpg">
+          <img src="img/2.jpg" alt="2" class="gallery__img" />
+          <span class="zoom">zoom</span>
+        </li>
+        <li class="gallery__item" data-fancybox="gallery" data-src="img/3.jpg">
+          <img src="img/3.jpg" alt="3" class="gallery__img" />
+          <span class="zoom">zoom</span>
+        </li>
+        <li class="gallery__item" data-fancybox="gallery" data-src="img/4.jpg">
+          <img src="img/4.jpg" alt="4" class="gallery__img" />
+          <span class="zoom">zoom</span>
+        </li>
+        <li class="gallery__item" data-fancybox="gallery" data-src="img/5.jpg">
+          <img src="img/5.jpg" alt="5" class="gallery__img" />
+          <span class="zoom">zoom</span>
+        </li>
+        <li class="gallery__item" data-fancybox="gallery" data-src="img/6.jpg">
+          <img src="img/6.jpg" alt="6" class="gallery__img" />
+          <span class="zoom">zoom</span>
+        </li>
+      </ul>
+    </div>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
