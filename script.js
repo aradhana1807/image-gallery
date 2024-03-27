@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 const lenis = new Lenis(
     {
         duration: 1,
@@ -16,6 +18,23 @@ gsap.ticker.add((time) => {
 })
 
 gsap.ticker.lagSmoothing(0)
+
+const tl = gsap.timeline(
+    {
+        scrollTrigger: {
+            trigger: ".wrapp",
+            start: "top center",
+            end: "bottom bottom",
+            scrub: 2,
+            markers: true,
+        }
+    }
+)
+tl.from('.gallery__item', {
+    opacity: 0,
+    y: 100,
+    stagger: 0.2,
+})
 
 Fancybox.bind('[data-fancybox="gallery"]', {
     dragToClose: false,
@@ -45,3 +64,4 @@ Fancybox.bind('[data-fancybox="gallery"]', {
         },
     },
 });
+
